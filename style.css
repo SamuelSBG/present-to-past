@@ -151,11 +151,23 @@ button:focus {
 
 @media (max-width: 500px) {
     .past, .present p {
-        font-size: 25px;
+        font-size: 30px;
     }
 
     .past:hover, .past:focus {
-        font-size: 25px;
+        font-size: 30px;
+    }
+
+    .main {
+        grid-area: main;
+        grid-template-columns: minmax(200px, 500px);
+        grid-template-rows: repeat(3, minmax(50px, 100px));
+        justify-content: center;
+        align-content: center;
+        grid-template-areas: 
+        "present"
+        "past"
+        "check";
     }
 
 }
