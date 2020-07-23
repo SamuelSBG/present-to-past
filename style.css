@@ -151,11 +151,11 @@ button:focus {
 
 @media (max-width: 500px) {
     .past, .present p {
-        font-size: 35px;
+        font-size: 30px;
     }
 
     .past:hover, .past:focus {
-        font-size: 35px;
+        font-size: 30px;
     }
 
 }
