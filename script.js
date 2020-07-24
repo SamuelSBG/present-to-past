@@ -91,7 +91,7 @@ function res_errada() {
 past.addEventListener('keyup', function(e){
     var key = e.keyCode;
     if (key == 13) {
-        if(past.value.toLowerCase() == verb_past[word]) { // quando acertar
+        if(past.value.trim().toLowerCase() == verb_past[word]) { // quando acertar
             res_correta();
         }else{ // quando errar
             res_errada();
@@ -101,7 +101,7 @@ past.addEventListener('keyup', function(e){
 });
 
 function vereficar() {
-    if(past.value.toLowerCase() == verb_past[word]) { // quando acertar
+    if(past.value.trim().toLowerCase() == verb_past[word]) { // quando acertar
         res_correta();
     }else{ // quando errar
         res_errada();
